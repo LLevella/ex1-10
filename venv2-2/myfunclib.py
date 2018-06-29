@@ -2,7 +2,7 @@ import chardet
 
 def input_data(str_file_name):
 
-    with open('newsafr.txt', 'rb') as f:
+    with open(str_file_name, 'rb') as f:
         txt_afr = f.read()
         encod = chardet.detect(txt_afr)
         s = txt_afr.decode(encod['encoding'])
